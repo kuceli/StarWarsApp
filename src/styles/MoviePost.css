@@ -1,0 +1,92 @@
+body {
+  background-color: black;
+  color: whitesmoke;
+  padding: 0 200px 35px 200px;
+}
+.logo {
+  fill: rgb(255, 232, 31);
+  max-width: 450px;
+}
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 42px 0;
+}
+.movieCardContainer {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.9rem;
+  row-gap: 1.9rem;
+  padding: 0;
+  justify-content: center;
+}
+.movieCard {
+  padding: 20px;
+  border-radius: 5px;
+  height: 270px;
+  width: 323px;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+}
+.movieCard:nth-child(1) {
+  background-image: url("https://finmavis.github.io/swapi-task/static/media/bg-card-1.0c96fd00.png");
+}
+.movieCard:nth-child(2) {
+  background-image: url("https://finmavis.github.io/swapi-task/static/media/bg-card-2.b0a7b209.png");
+}
+.movieCard:nth-child(3) {
+  background-image: url("https://finmavis.github.io/swapi-task/static/media/bg-card-3.1914d853.png");
+}
+.movieCard:nth-child(4) {
+  background-image: url("https://finmavis.github.io/swapi-task/static/media/bg-card-4.c21c4d4b.png");
+}
+.movieCard:nth-child(5) {
+  background-image: url("https://finmavis.github.io/swapi-task/static/media/bg-card-5.67d061d6.png");
+}
+.movieCard:nth-child(6) {
+  background-image: url("https://finmavis.github.io/swapi-task/static/media/bg-card-6.b4fea25d.png");
+}
+.movieCard:hover {
+  box-shadow: rgb(32, 152, 209) 0px 0px 10px 3px, rgb(0, 0, 0) 0px 0px 10px;
+}
+.title {
+  font-size: 24px;
+  letter-spacing: 1.5px;
+}
+.date {
+  color: rgb(157, 157, 157);
+  font-size: 14px;
+  margin-top: 2px;
+  margin-bottom: 17px;
+}
+.openingCrawl {
+  color: whitesmoke;
+  font-size: 17px;
+  line-height: 22px;
+  white-space: normal;
+  margin-bottom: 1.7rem;
+}
+.moreInfo {
+  border-top: 2px solid rgb(142, 46, 46);
+  color: rgb(255, 232, 31);
+  padding-top: 11px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.loadingIcon {
+  animation: rotation 3s infinite linear;
+  height: 114px;
+  width: 146px;
+  margin-top: 150px;
+  margin-left: 440px;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
